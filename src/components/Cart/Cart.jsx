@@ -22,7 +22,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleEmptyCart, handleRemoveFromCart
                    </Grid>   
               ))}
           </Grid>
-           <div claseeName={classes.cardDetails}>
+           <div className={classes.cardDetails}>
                <Typography variant="h4">
                    Subtotal: {cart.subtotal.formatted_with_symbol}
                </Typography>
