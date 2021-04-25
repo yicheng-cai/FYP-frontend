@@ -16,17 +16,23 @@ const Navbar = ({ totalItems }) => {
                     <Typography component={ Link } to="/" variant="h6" className={classes.title} color="inherit">
                         <img src={logo} alt="Commerce.js" height="25px" className={classes.image} />
                         shopping 
-                    </Typography>
+                    </Typography>                    
                     <div className={classes.grow} />
                     {location.pathname === '/' && (
                     <div className={classes.button}>
+                    <Typography component={ Link } to="/Login" variant="h6" className={classes.title} color="inherit">
+                        Login 
+                    </Typography>
+                    <Typography component={ Link } to="/Logout" variant="h6" className={classes.title} color="inherit">
+                        Out
+                    </Typography>
                     <IconButton component={ Link } to="/cart" aria-label="Show Cart items" color="inherit">
                         <Badge badgeContent={totalItems} color="secondary">
                             <ShoppingCart />
                         </Badge>
-
                     </IconButton>
                     </div>)}
+                    
                 </Toolbar>
             </AppBar>
         </>
